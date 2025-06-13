@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.Login {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightblue;
+}
+
+.Footer {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font: bold;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  background-color: aqua;
+  border-radius: 20px;
+  button {
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.personaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.personaje:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.personaje img {
+  width: 120px; /* Ajusta el tamaño de la imagen */
+  height: 120px;
+  border-radius: 50%; /* Cambia a círculo */
+  transition: transform 0.3s;
+}
+
+.personaje img:hover {
+  transform: scale(1.1);
+}
+
+.personaje p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
+
+.personaje button {
+  cursor: pointer;
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.personaje button:hover {
+  background-color: #e65b50;
+  transform: scale(1.05);
+}
+
+.CharacterContainer {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.Perfil {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.CajaPerfil {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.buscador {
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.paginaBuscador {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.FichaPersonaje {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px; /* Reduce the width slightly */
+  margin: 40px auto; /* Add margin to separate from header and footer */
+  background-color: #ffffff;
+  padding: 20px; /* Adjust padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Match the color of the paragraphs */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s ease; /* Add a hover effect */
+}
+
+a:hover {
+  color: #555; /* Slightly darker color on hover */
+}
+
+.FichaPersonaje img {
+  width: 200px; /* Adjust the size of the image */
+  height: 200px;
+  border-radius: 50%; /* Change to circle */
+  transition: transform 0.3s;
+}
+
+.FichaPersonaje p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #333; /* Set a neutral color for text */
+}
