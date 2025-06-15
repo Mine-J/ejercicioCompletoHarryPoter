@@ -13,9 +13,9 @@ type hp = {
 export const handler: Handlers = {
   GET: async (req: Request, ctx: FreshContext<unknown, hp[]>) => {
     const cookie = req.headers.get("cookie")
-    const cookies = cookie ? cookie.split(";") : [];
+    const cookies = cookie ? cookie.split("; ") : [];
     
-    const fav = cookies.find((row) => row.startsWith(" Favoritos="));
+    const fav = cookies.find((row) => row.startsWith("Favoritos="));
     
     const valueFav = fav ? fav.split("=")[1] : "";
     let resp;

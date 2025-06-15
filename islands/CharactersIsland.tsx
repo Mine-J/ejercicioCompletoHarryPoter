@@ -15,10 +15,11 @@ export const CharactersIsland: FunctionalComponent<info> = (props) => {
   
 
   const Favoritos = (elem: hp) => {
+    console.log(document.cookie)
     const favoritosCookie = document.cookie
       .split("; ")
       .find((row) => row.startsWith("Favoritos="));
-
+    console.log(favoritosCookie)
     let favoritos = favoritosCookie
       ? favoritosCookie.split("=")[1].split(",")
       : [];
