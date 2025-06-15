@@ -6,7 +6,7 @@ export const Buscador: FunctionalComponent = () => {
             <form action="/Search" method="GET">
                 <h2>Searcher</h2>
                 <input type="text" name="name"/>
-                <button type="button">Search</button>
+                <button type="submit">Search</button>
             </form>
         </div>
     );
