@@ -14,3 +14,8 @@ deno task start
 ```
 
 This will watch the project directory and restart as necessary.
+
+
+### Deno Deploy
+
+https://old-wolf-55-34vqtbnem7mt.deno.dev
